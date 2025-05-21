@@ -61,6 +61,7 @@ import androidx.compose.ui.window.Dialog
 import android.widget.Button
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import com.google.android.gms.location.Priority
 
 class MainActivity : AppCompatActivity() {
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -80,14 +81,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         enableEdgeToEdge()
-
-        val btnVerProductos = findViewById<Button>(R.id.btnVerProductos)
-        btnVerProductos.setOnClickListener {
-            supportFragmentManager.commit {
-                replace<ProductosFragment>(R.id.fragmentContainer)
-                setReorderingAllowed(true)
-            }
-        }
     }
 
     private fun fetchLocation(onLocationResult: (String) -> Unit) {
@@ -290,7 +283,7 @@ fun fetchLocation(
 
     // Crear un LocationRequest para obtener una sola actualización rápida
     val locationRequest = LocationRequest.Builder(1000)
-        .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+        .setPriority(Priority.PRIORITY_HIGH_ACCURACY)
         .setMaxUpdates(1)
         .build()
 

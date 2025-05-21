@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "555822320119",
+    "project_id": "tiendamovilfirebase",
+    "storage_bucket": "tiendamovilfirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555822320119:android:cce07d194cd6eafce306f2",
+        "android_client_info": {
+          "package_name": "com.tienda.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555822320119-72q3hjldn01qdf4jpgr362ft20uotmcv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tienda.app",
+            "certificate_hash": "c2c81becf93110fc8467b6c18ca1deb19009a006"
+          }
+        },
+        {
+          "client_id": "555822320119-e8jjiqcu3u9n2g8h98jb7ucj6cd7b2pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPHUxHxPMaZMN5mNFpjRscHktJJ_titv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555822320119-e8jjiqcu3u9n2g8h98jb7ucj6cd7b2pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -80,14 +80,6 @@ fun CarritoScreen(carritoViewModel: CarritoViewModel) {
                 Icon(Icons.Default.LocationOn, contentDescription = "Ver ubicación")
             }
         }
-        Spacer(modifier = Modifier.height(16.dp))
-        Button(onClick = {
-            // Volver a productos (popBackStack)
-            val activity = (context as? androidx.fragment.app.FragmentActivity)
-            activity?.supportFragmentManager?.popBackStack()
-        }, modifier = Modifier.fillMaxWidth()) {
-            Text("Volver a productos")
-        }
     }
 
     // Diálogo de confirmación de compra
